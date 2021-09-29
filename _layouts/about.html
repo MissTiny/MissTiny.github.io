@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<style>
+  body {
+  text-align: justify}
+  </style>
 
 <div class="post">
 
@@ -13,7 +17,7 @@ layout: default
 
   <article>
     {% if page.profile %}
-    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %} ml-5">
       {% if page.profile.image %}
         <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
       {% endif %}
@@ -25,7 +29,7 @@ layout: default
     </div>
     {% endif %}
 
-    <div class="clearfix">
+    <div class="clearfix mr-4">
       {{ content }}
     </div>
 

@@ -4,30 +4,43 @@ permalink: /teaching/
 title: teaching
 description: # Materials for courses you taught. Replace this text with your description.
 nav: true
-
-# For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-# Organize your courses by years, topics, or universities, however you like!
+# {% assign sorted_teachings = site.teaching | sort: "year" | reverse %}
 ---
-Fall 2021 Teaching Assistant: CS:4480 Knowledge Discovery, University of Iowa
-Spring 2021 Teaching Assistant: CS:4330 Theory of Computation, University of Iowa
-Fall 2020 Teaching Assistant: CS:4480 Knowledge Discovery, University of Iowa
-Fall 2020 Presentation: E-Commerce - CS:4980 Minning and Learning on Large Networks 
-Fall 2020 Presentation: Link Analysis - CS:4980 Minning and Learning on Large Networks 
-
-<div class="container">
-    <div class="row">
-        <div class="col-2" id="year">
-            Fall 2021
-        </div>
-        <div class="col-2" id="position">
-            Teaching Assistant
-        </div>
-        <div class="col" id="topic">
-            CS:4480 Knowledge Discovery
-        </div>
-        <div class="col-2" id="location">
-             University of Iowa
-        </div>
-    </div>
+<div class="teachings">
+    <table class="table table-hover">
+    <thead>
+        <tr>
+        <th scope="col-2">Year</th>
+        <th scope="col-2">Position</th>
+        <th scope="col-3">Course/Topic</th>
+        <th scope="col-3">Location</th>
+        <th scope="col-4">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for teaching in site.teaching %}
+            <tr class="teaching" >
+                <td class="col-2" style="vertical-align:middle">
+                    {{ teaching.time }}
+                </td>
+                <td class="col-2" style="vertical-align:middle">
+                    {{ teaching.position }}
+                </td>
+                <td class="col-3" style="vertical-align:middle">
+                    {{teaching.title}}
+                </td>
+                <td class="col-3" id="location" style="vertical-align:middle">
+                    {{teaching.location}}
+                </td>
+                <td class="col-4" id="description" style="vertical-align:middle" data-bs-toggle="tooltip" data-bs-placement="right" title="{{teaching.description}}">
+                    {% if teaching.link %}
+                    <a href="{{teaching.link}}" target="_blank">click to see more</a>
+                    {% else %}
+                    Hover to see more
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
 </div>
