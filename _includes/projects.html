@@ -9,8 +9,24 @@
       <img src="{{ project.img | relative_url }}" alt="project thumbnail">
       {% endif %}
       <div class="card-body">
-        <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+        <h2 class="card-title">{{ project.title }}</h2>
         <p class="card-text">{{ project.description }}</p>
+
+        {% if project.status == "ongoing" %}
+        <span class="badge badge-primary">{{ project.status}}</span>
+        {% endif %}
+
+        {% if project.status == "under review" %}
+        <span class="badge badge-warning">{{ project.status}}</span>
+        {% endif %}
+
+        {% if project.status == "published" or project.status == "done" %}
+        <span class="badge badge-success">{{ project.status}}</span>
+        {% endif %}
+
+        {% for tag in project.keywords %}
+        <span class="badge badge-info">{{tag}}</span>
+        {% endfor %}
         <div class="row ml-1 mr-1 p-0">
           {% if project.github %}
           <div class="github-icon">

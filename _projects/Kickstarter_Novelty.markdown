@@ -1,11 +1,12 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: /assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+title: KickStarter Novelty Detection
+description: A classifier that can classify function of images in Kickstarter projects
+img: /assets/img/kickstarter_header.png
+importance: 1
+category: 
+status: ongoing
+keywords: [data science, kickstarter, image]
 ---
 
 Every project has a beautiful feature showcase page.

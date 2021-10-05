@@ -1,10 +1,13 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: /assets/img/3.jpg
-importance: 2
-category: work
+title: ImagiQ
+description: Usage-firendly, Collaborative Deep Learning Platform for Medical Imaging
+img: /assets/img/ImagiQ.png
+redirect: https://stephenbaek.github.io/projects/imagiq/
+importance: 1
+category: Federated Learning
+status: ongoing
+keywords: [federated learning, image classification, NSF funded]
 ---
 
 Every project has a beautiful feature showcase page.

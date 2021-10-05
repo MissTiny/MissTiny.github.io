@@ -1,10 +1,12 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+title: Partially Interpretable Estimators (PIE)
+description: PIE model is a new form of predictive model that boost predictive performance while maintaining interpretability
+img:
 importance: 1
-category: work
+category: Interpretability
+status: under review
+keywords: [interpretability, hybrid model]
 ---
 
 Every project has a beautiful feature showcase page.
