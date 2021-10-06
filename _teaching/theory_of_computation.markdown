@@ -7,5 +7,5 @@ year: 2021.0
 position: Teaching Assistant
 location: University of Iowa
 description: The goal of this course is to develop the intuition of machine-computation using the mathematical models of computation provided by automata theory.Topics covered include finite automata, regular sets and regular expressions, context-free languages and push-down automata, Turing machines, decidability, and undecidability theory. 
-link: #
+redirect: #
 ---

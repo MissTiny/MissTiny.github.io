@@ -2,79 +2,45 @@
 layout: page
 title: KickStarter Novelty Detection
 description: A classifier that can classify function of images in Kickstarter projects
-img: /assets/img/kickstarter_header.png
+img: /assets/img/project_kickstarter/kickstarter_header.png
 importance: 1
 category: 
 status: ongoing
 keywords: [data science, kickstarter, image]
 ---
+<style>
+  body {
+  text-align: justify}
+  </style>
+<h4><strong>Brief Introduction</strong></h4>
+Kickstarter novelty detection is an on-going project. We aimed at designing a comprehensive score to scale the novelty level in projects and linking the novelty score with the successfullness of the project.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<h4><strong>Plan of Work</strong></h4>
+The work is divided to two stages.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<strong>Stage 1: Image Classifier [Current]</strong>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+we want to create a image classifier that can distinguish the functions of images in the project descriptions.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+<strong>[Our Motivation]</strong>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+We noticed that images in descriptions of the projects must be there for some reason. Therefore, we divide the images into 10 categories based on the purpose of images. We hope that with the created Image Classifier, further research would easily classify the purpose of images in the descriptions without human labelling.
 
+<strong>[Difficulties]</strong>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+<div>
+    <li>
+        [Lack of Data] - Even though we scrape images from thousands of projects, the number of images in some categories is still not enough.
+    </li>
+    <li>
+        [Unbalanced Data] - Some categories have way more samples than others.
+    </li>
+    <li>
+        [Poor Performance] - The baseline auc is only around .5, which means that the model learns nothing.
+    </li>
 </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+<strong>Stage 2: Comprehensive Score</strong>
 
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+<h4>This is still an working paper, Stay tuned!</h4>

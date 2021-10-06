@@ -8,73 +8,23 @@ category: Interpretability
 status: under review
 keywords: [interpretability, hybrid model]
 ---
+<style>
+  body {
+  text-align: justify}
+  </style>
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<h4><b>Abstract</b></h4>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+We propose a new form of a predictive model, Partially Interpretable Estimators (PIE). A PIE model attributes a prediction to individual features via an interpretable model, while the remaining of the PIE prediction is captured by a black-box model, with the goal to boost the predictive performance while maintaining interpretability. As such, the interpretable model  captures the main contributions of features,  and the black-box model complements the interpretable piece by capturing the “nuances” of feature interactions as a refinement. We also include a sparsity constraint such that users can tune the model to meet domain-specific requirements of interpretability. We design a coordinated training algorithm to jointly train the two types of models to globally optimize the performance and achieve the best collaboration of the two. Experimental results show that PIE is highly competitive to state-of-the-art black-box models on tabular data. In addition,the understandability of PIE is comparable to linear models as validated via human evaluations.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<strong>Codes for PIE model is in <a href="https://github.com/MissTiny/Partially-Interpretable-Estimators" target="_blank">GitHub</a>. </strong>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
+<div class="d-flex justify-content-center">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/project_PIE/PIE_model_image.png' | relative_url }}" alt="" title="example image"/>
+
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    The simple explaination of PIE model.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+<strong>For detailed functions, such as objective functions, please check the pre-print paper <a href="https://arxiv.org/abs/2105.02410" target="_blank">here</a>.</strong>

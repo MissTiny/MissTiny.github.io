@@ -33,10 +33,10 @@ nav: true
                 {{teaching.location}}
             </td>
             <td class="col-4" id="description" style="vertical-align:middle" data-bs-toggle="tooltip" data-bs-placement="right" title="{{teaching.description}}">
-                {% if teaching.link %}
-                <a href="{{teaching.link}}" target="_blank">click to see more</a>
+                {% if teaching.redirect %}
+                <a href="{{teaching.redirect}}" target="_blank">click to see more</a>
                 {% else %}
-                Hover to see more
+                <a href="{{ teaching.url | relative_url }}"> click to see more</a>
                 {% endif %}
             </td>
         </tr>
