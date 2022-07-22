@@ -11,7 +11,7 @@
   Jingyi  Yang
 
 
-  | blog
+  | teaching
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/teaching/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -147,9 +147,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/teaching/">
                 teaching
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -177,56 +179,111 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">teaching</h1>
+    <p class="post-description"></p>
+  </header>
 
+  <article>
+    <div class="teachings">
+    <table class="table table-hover">
+    <thead>
+        <tr>
+        <th scope="col-2">Year</th>
+        <th scope="col-2">Position</th>
+        <th scope="col-3">Course/Topic</th>
+        <th scope="col-3">Location</th>
+        <th scope="col-4">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+    
+        <tr class="teaching">
+            <td class="col-2" style="vertical-align:middle">
+                Fall 2021<br />Fall 2020
+            </td>
+            <td class="col-2" style="vertical-align:middle">
+                Teaching Assistant
+            </td>
+            <td class="col-3" style="vertical-align:middle">
+                CS:4480 Knowledge Discovery
+            </td>
+            <td class="col-3" id="location" style="vertical-align:middle">
+                University of Iowa
+            </td>
+            <td class="col-4" id="description" style="vertical-align:middle" data-bs-toggle="tooltip" data-bs-placement="right" title="In this course you will learn the basics of data mining and knowledge discovery. Our focus will be on the algorithms that are commonly used to build predictive models and find relevant patterns in data. We will look at different ways of applying these techniques to real-world problems from domains such as marketing, health care, bioinformatics, and information retrieval. We will also discuss the different steps in the knowledge discovery process, particularly data cleansing and transformation.">
+                
+                <a href="https://dollar.biz.uiowa.edu/~street/msci4480f17/syll.html" target="_blank">click to see more</a>
+                
+            </td>
+        </tr>
+    
+        <tr class="teaching">
+            <td class="col-2" style="vertical-align:middle">
+                Spring 2021
+            </td>
+            <td class="col-2" style="vertical-align:middle">
+                Teaching Assistant
+            </td>
+            <td class="col-3" style="vertical-align:middle">
+                CS:4330 Theory of Computation
+            </td>
+            <td class="col-3" id="location" style="vertical-align:middle">
+                University of Iowa
+            </td>
+            <td class="col-4" id="description" style="vertical-align:middle" data-bs-toggle="tooltip" data-bs-placement="right" title="The goal of this course is to develop the intuition of machine-computation using the mathematical models of computation provided by automata theory.Topics covered include finite automata, regular sets and regular expressions, context-free languages and push-down automata, Turing machines, decidability, and undecidability theory.">
+                
+                <a href="/teaching/theory_of_computation/"> click to see more</a>
+                
+            </td>
+        </tr>
+    
+        <tr class="teaching">
+            <td class="col-2" style="vertical-align:middle">
+                Fall 2020
+            </td>
+            <td class="col-2" style="vertical-align:middle">
+                Presentation
+            </td>
+            <td class="col-3" style="vertical-align:middle">
+                CS:4980 Mining and Learning for Large Networks
+            </td>
+            <td class="col-3" id="location" style="vertical-align:middle">
+                University of Iowa
+            </td>
+            <td class="col-4" id="description" style="vertical-align:middle" data-bs-toggle="tooltip" data-bs-placement="right" title="This course will introduce students to mining and machine learning on graphs. Students will learn several techniques for exploring and analyzing large scale networks, appreciate the challenges in graph mining, learn how to overcome them, and study applications in several domains including public health, e-commerce and critical infrastructures.">
+                
+                <a href="/teaching/mining_and_learning_on_large_networks/"> click to see more</a>
+                
+            </td>
+        </tr>
+    
+        <tr class="teaching">
+            <td class="col-2" style="vertical-align:middle">
+                Fall 2020
+            </td>
+            <td class="col-2" style="vertical-align:middle">
+                Presentation
+            </td>
+            <td class="col-3" style="vertical-align:middle">
+                CS:4700 High Performance and Parallel Computing
+            </td>
+            <td class="col-3" id="location" style="vertical-align:middle">
+                University of Iowa
+            </td>
+            <td class="col-4" id="description" style="vertical-align:middle" data-bs-toggle="tooltip" data-bs-placement="right" title="Diverse aspects of parallel programming and high-performance computing are covered. The core of this class is on basic parallel programming using standard libraries such as OpenMP for multicore processors, CUDA for GPUs, and MPI for distributed systems. Important concepts such as cache locality and data dependence are introduced as the fundamentals for understanding and optimizing performance. Programming examples and assignments are from applications in the areas of data analysis, machine learning, and scientific computing.">
+                
+                <a href="/teaching/high_performance_parallel/"> click to see more</a>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+</div>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 

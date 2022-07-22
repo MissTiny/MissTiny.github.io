@@ -11,7 +11,7 @@
   Jingyi  Yang
 
 
-  | blog
+  | Partially Interpretable Estimators (PIE)
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/Partially_Interpretable_Estimators/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -121,8 +121,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -177,56 +175,34 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Partially Interpretable Estimators (PIE)</h1>
+    <p class="post-description">PIE model is a new form of predictive model that boost predictive performance while maintaining interpretability</p>
+  </header>
 
+  <article>
+    <style>
+  body {
+  text-align: justify}
+  </style>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-  </ul>
+<h4><b>Abstract</b></h4>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<p>We propose a new form of a predictive model, Partially Interpretable Estimators (PIE). A PIE model attributes a prediction to individual features via an interpretable model, while the remaining of the PIE prediction is captured by a black-box model, with the goal to boost the predictive performance while maintaining interpretability. As such, the interpretable model  captures the main contributions of features,  and the black-box model complements the interpretable piece by capturing the “nuances” of feature interactions as a refinement. We also include a sparsity constraint such that users can tune the model to meet domain-specific requirements of interpretability. We design a coordinated training algorithm to jointly train the two types of models to globally optimize the performance and achieve the best collaboration of the two. Experimental results show that PIE is highly competitive to state-of-the-art black-box models on tabular data. In addition,the understandability of PIE is comparable to linear models as validated via human evaluations.</p>
 
+<p><strong>Codes for PIE model is in <a href="https://github.com/MissTiny/Partially-Interpretable-Estimators" target="_blank">GitHub</a>. </strong></p>
 
+<div class="d-flex justify-content-center">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/project_PIE/PIE_model_image.png" alt="" title="example image" />
+
+</div>
+<div class="caption">
+    The simple explaination of PIE model.
+</div>
+
+<p><strong>For detailed functions, such as objective functions, please check the pre-print paper <a href="https://arxiv.org/abs/2105.02410" target="_blank">here</a>.</strong></p>
+
+  </article>
 
 </div>
 
