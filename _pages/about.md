@@ -23,3 +23,5 @@ social: false  # includes social icons at the bottom of the page
 Jingyi Yang joined Information Systems PhD Program at New York University from 2022. Previous to her entry, she received her master and undergrad degree from University of Iowa.
 
 Her research interests lie in the fields of Interpretability, Data Science, Machine Learning.
+
+[More Content Coming Soon!]
